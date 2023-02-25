@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1px solid black">
+        <tr>
+            <th>City</th>
+            <th>Company</th>
+            <th>Package</th>
+        </tr>
+        <tr>
+            <td id="i1">&nbsp</td>
+            <td id="i2">&nbsp</td>
+            <td id="i3">&nbsp</td>
+        </tr>
+        <tr>
+            <th colspan="3"><button onclick="function1()">Know your placement</button></th>
+        </tr>
+    </table>
+    <script>
+        function function1(){
+            var super_dream_companies;
+            super_dream_companies = {
+  "Amazon": ["Bangalore", "Chennai", "Hyderabad"],
+  "Microsoft": ["Bangalore", "Hyderabad"],
+  "Goldman Sachs": ["Bangalore"],
+  "Flipkart": ["Bangalore"],
+  "JP Morgan Chase": ["Mumbai", "Bangalore", "Hyderabad"],
+  "American Express": ["Gurgaon", "Bangalore"],
+  "Adobe": ["Noida", "Bangalore"],
+  "Oracle": ["Bangalore", "Hyderabad"],
+  "Walmart Labs": ["Bangalore", "Hyderabad", "Chennai"],
+  "Deutsche Bank": ["Pune", "Jaipur"],
+  "Citi Bank": ["Mumbai", "Pune", "Chennai"],
+  "Texas Instruments": ["Bangalore"],
+  "Morgan Stanley": ["Mumbai", "Bangalore"],
+  "Visa": ["Bangalore"],
+  "Samsung R&D": ["Bangalore"],
+  "Expedia": ["Gurgaon"],
+  "IBM": ["Bangalore", "Hyderabad", "Chennai"],
+  "Intel": ["Bangalore"],
+  "Qualcomm": ["Bangalore", "Hyderabad"],
+  "Directi": ["Mumbai"],
+  "Sprinklr": ["Gurgaon"],
+  "Tower Research Capital": ["Gurgaon"],
+  "Societe Generale": ["Bangalore"],
+  "Media.net": ["Mumbai"],
+  "Myntra": ["Bangalore"],
+  "InMobi": ["Bangalore"],
+  "Razorpay": ["Bangalore"],
+  "OYO Rooms": ["Gurgaon"],
+  "Swiggy": ["Bangalore"],
+  "Zomato": ["Gurgaon"],
+  "PhonePe": ["Bangalore"],
+  "Paytm": ["Noida", "Bangalore"],
+  "Ola": ["Bangalore"],
+  "Uber": ["Bangalore", "Hyderabad"],
+  "BYJU'S": ["Bangalore"],
+  "Wells Fargo": ["Bangalore", "Hyderabad", "Chennai"],
+  "Airbnb": ["Mumbai", "Gurgaon", "Bangalore"],
+  "DE Shaw": ["Hyderabad"],
+  "Google": ["Bangalore", "Hyderabad"],
+  "PayPal": ["Chennai", "Bangalore", "Hyderabad"],
+  "HSBC": ["Pune", "Hyderabad", "Bangalore"],
+  "Atlassian": ["Bangalore"],
+  "Nvidia": ["Pune", "Hyderabad"],
+  "LinkedIn": ["Bangalore"],
+  "Salesforce": ["Hyderabad", "Bangalore"],
+  "Walmart Global Tech": ["Bangalore", "Gurgaon", "Chennai"],
+  "Zoho": ["Chennai"],
+  "Cisco": ["Bangalore", "Chennai"],
+  "Dell": ["Bangalore"],
+  "Goldcast": ["Bangalore", "Chennai"],
+  "Intuit": ["Bangalore", "Hyderabad"],
+  "Freshworks": ["Chennai"],
+  "Chargebee": ["Chennai"],
+  "Zarget": ["Chennai"],
+  "Shell": ["Bangalore", "Chennai"],
+  "SAP Labs": ["Bangalore"],
+  "MakeMyTrip": ["Gurgaon"],
+  "McKinsey & Company": ["Gurgaon", "Mumbai", "New Delhi", "Bangalore", "Chennai"],
+  "Druva": ["Pune"],
+  "Oracle Financial Services Software": ["Mumbai"],
+  "Qualys": ["Pune"],
+  "Publicis Sapient": ["Gurgaon", "Bengaluru"],
+  "Other": ["Other"]
+};
+
+
+var dream_companies;
+dream_companies = {
+  "TCS": ["Mumbai", "Bengaluru", "Pune", "Chennai"],
+  "Infosys": ["Bengaluru", "Pune", "Chennai", "Hyderabad"],
+  "Wipro": ["Bengaluru", "Hyderabad", "Chennai", "Pune"],
+  "Accenture": ["Mumbai", "Bengaluru", "Hyderabad", "Chennai"],
+  "HCL Technologies": ["Noida", "Bengaluru", "Chennai", "Hyderabad"],
+  "Capgemini": ["Mumbai", "Bengaluru", "Chennai", "Hyderabad"],
+  "Tech Mahindra": ["Bengaluru", "Hyderabad", "Pune", "Chennai"],
+  "IBM": ["Bengaluru", "Hyderabad", "Gurgaon", "Noida"],
+  "Cognizant": ["Bengaluru", "Hyderabad", "Chennai", "Pune"],
+  "L&T Infotech": ["Mumbai", "Bengaluru", "Chennai", "Pune"],
+  "Mindtree": ["Bengaluru", "Chennai", "Hyderabad", "Pune"],
+  "Hexaware": ["Mumbai", "Chennai", "Pune", "Bengaluru"],
+  "Persistent Systems": ["Pune", "Bengaluru", "Hyderabad", "Nagpur"],
+  "Mphasis": ["Bengaluru", "Pune", "Hyderabad", "Chennai"],
+  "NIIT Technologies": ["Noida", "Greater Noida", "Mumbai", "Hyderabad"],
+  "Polaris Consulting & Services": ["Chennai", "Mumbai", "Hyderabad", "Pune"],
+  "KPIT Technologies": ["Pune", "Bengaluru", "Hyderabad", "Nagpur"],
+  "Tata Elxsi": ["Bengaluru", "Chennai", "Hyderabad", "Mumbai"],
+  "Birlasoft": ["Noida", "Bengaluru", "Hyderabad", "Pune"],
+  "Zensar Technologies": ["Pune", "Hyderabad", "Bengaluru", "Chennai"],
+  "Pramati Technologies": ["Hyderabad", "Bengaluru", "Chennai", "Pune"],
+  "CSC India": ["Hyderabad", "Indore", "Noida", "Indore"],
+  "Syntel": ["Pune", "Mumbai", "Chennai", "Nagpur"],
+  "Hexagon Capability Center India": ["Hyderabad", "Pune", "Bengaluru", "Chennai"],
+  "Virtusa": ["Hyderabad", "Chennai", "Bengaluru", "Pune"],
+  "Sasken": ["Bengaluru", "Pune", "Hyderabad", "Chennai"],
+  "Larsen & Toubro": ["Mumbai", "Chennai", "Bengaluru", "Hyderabad"],
+  "Tech Mahindra BPO": ["Mumbai", "Pune", "Hyderabad", "Noida"],
+  "Mastek": ["Mumbai", "Pune", "Bengaluru", "Chennai"],
+  "Mindfire Solutions": ["Bhubaneswar", "Chennai", "Bengaluru", "Pune"],
+  "Tavant Technologies": ["Bengaluru"],
+  "Zycus Infotech": ["Mumbai", "Bengaluru"],
+  "NIIT Limited": ["Multiple locations"],
+  "Cybage Software": ["Pune"],
+  "Persistent Systems": ["Pune"]
+};
+const superDreamCompanies = {
+  "Amazon": 3000000,
+  "Microsoft": 3500000,
+  "Goldman Sachs": 3100000,
+  "Flipkart": 2600000,
+  "JP Morgan Chase": 3200000,
+  "American Express": 2500000,
+  "Adobe": 3300000,
+  "Oracle": 2800000,
+  "Walmart Labs": 2700000,
+  "Deutsche Bank": 2800000,
+  "Citi Bank": 2900000,
+  "Texas Instruments": 2600000,
+  "Morgan Stanley": 3400000,
+  "Visa": 3000000,
+  "Samsung R&D": 2900000,
+  "Expedia": 2400000,
+  "IBM": 3300000,
+  "Intel": 2900000,
+  "Qualcomm": 3400000,
+  "Directi": 2500000,
+  "Sprinklr": 2600000,
+  "Tower Research Capital": 2300000,
+  "Societe Generale": 2900000,
+  "Media.net": 2400000,
+  "Myntra": 2900000,
+  "InMobi": 2600000,
+  "Razorpay": 2600000,
+  "OYO Rooms": 2700000,
+  "Swiggy": 2600000,
+  "Zomato": 2500000,
+  "PhonePe": 3100000,
+  "Paytm": 3000000,
+  "Ola": 2800000,
+  "Uber": 3000000,
+  "BYJU'S": 2600000,
+  "Wells Fargo": 2900000,
+  "Airbnb": 3000000,
+  "DE Shaw": 3400000,
+  "Google": 3100000,
+  "PayPal": 3300000,
+  "HSBC": 2900000,
+  "Atlassian": 3000000,
+  "Nvidia": 3100000,
+  "LinkedIn": 2900000,
+  "Salesforce": 3400000,
+  "Walmart Global Tech": 2600000,
+  "Zoho": 2400000,
+  "Cisco": 2800000,
+  "Dell": 2500000,
+  "Goldcast": 2500000,
+  "Intuit": 3400000,
+  "Freshworks": 2500000,
+  "Chargebee": 2500000,
+  "Zarget": 2500000,
+  "Shell": 3200000,
+  "SAP Labs": 3300000,
+  "MakeMyTrip": 2500000,
+  "McKinsey & Company": 3000000,
+  "Druva": 2600000,
+  "Oracle Financial Services Software": 3300000,
+  "Qualys": 2800000,
+  "Publicis Sapient": 2700000
+};
+
+
+const placement = ["superdream", "dream"]
+var x = Math.floor(Math.random()*placement.length);
+if(x==0){
+    var keys = [];
+    for (var key in super_dream_companies) {
+  if (super_dream_companies.hasOwnProperty(key)) {
+    keys.push(key);
+  }
+}
+  var y = Math.floor(Math.random()*keys.length);
+  var company = keys[y];
+  var z = super_dream_companies[company];
+  var l = z.length;
+  var num = Math.floor(Math.random()*l);
+  var city = z[num];
+  document.getElementById("i1").innerHTML = city;
+  document.getElementById("i2").innerHTML = company;
+  var package = superDreamCompanies[company];
+  package = package.toString().substring(0,2);
+
+  document.getElementById("i3").innerHTML = package.toString()+" "+"lakhs";
+}
+else{
+    var keys = []
+    for (var key in dream_companies) {
+  if (dream_companies.hasOwnProperty(key)) {
+    keys.push(key);
+  }
+}
+  var y = Math.floor(Math.random()*keys.length);
+  var company = keys[y];
+  var z = super_dream_companies[company];
+  var l = z.length;
+  var num = Math.floor(Math.random()*l);
+  var city = z[num];
+  document.getElementById("i1").innerHTML = city;
+  document.getElementById("i2").innerHTML = company;
+  var package = Math.floor(Math.random()*11)+5;
+  document.getElementById("i3").innerHTML = package.toString()+" "+"lakhs";
+}
+
+}
+
+
+</script>
+</body>
+</html>
